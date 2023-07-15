@@ -7,11 +7,14 @@
 
 struct MacBook {
     let allowableChargeWattPerHour: WattPerHour
-    let currentBatteryCapacity: WattPerHour
-    let maxBatteryCapacity: WattPerHour = 100
+    let currentBattery: WattPerHour
+    let maxBattery: WattPerHour = 100
     
     func chargeBattery(charger: Chargeable) {
-        // 충전기를 활용해 배터리를 완전히 충전한 뒤 충전에 걸린 시간을 print함
+        let chargeWattPerHour = charger.convert(chargeableWattPerHour: allowableChargeWattPerHour)
         
+        let fullChargeTime = (maxBattery - currentBattery) / chargeWattPerHour
+        
+        print("충전에 걸린 시간은 \(fullChargeTime)입니다.")
     }
 }
