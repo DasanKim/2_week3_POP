@@ -10,6 +10,7 @@
 		ACA822192A621CBF0091769C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA822182A621CBF0091769C /* main.swift */; };
 		ACA822202A621CD10091769C /* Chargeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA8221F2A621CD10091769C /* Chargeable.swift */; };
 		ACB03B142A6220130036360F /* Charger.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB03B132A6220130036360F /* Charger.swift */; };
+		ACA822242A621E680091769C /* MacBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA822232A621E680091769C /* MacBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		ACA822182A621CBF0091769C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		ACA8221F2A621CD10091769C /* Chargeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chargeable.swift; sourceTree = "<group>"; };
 		ACB03B132A6220130036360F /* Charger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charger.swift; sourceTree = "<group>"; };
+		ACA822232A621E680091769C /* MacBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				ACA822182A621CBF0091769C /* main.swift */,
 				ACA8221F2A621CD10091769C /* Chargeable.swift */,
 				ACB03B132A6220130036360F /* Charger.swift */,
+				ACA822232A621E680091769C /* MacBook.swift */,
 			);
 			path = 2_week3_POP;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 			files = (
 				ACA822192A621CBF0091769C /* main.swift in Sources */,
 				ACB03B142A6220130036360F /* Charger.swift in Sources */,
+				ACA822242A621E680091769C /* MacBook.swift in Sources */,
 				ACA822202A621CD10091769C /* Chargeable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
