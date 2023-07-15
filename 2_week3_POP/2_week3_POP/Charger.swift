@@ -5,7 +5,7 @@
 //  Created by Dasan on 2023/07/15.
 //
 
-struct Charger: Chargeable {
+struct Charger: Chargeable, Portable {
     var maximumWattPerHour: WattPerHour
     
     func convert(chargeableWattPerHour: WattPerHour) -> WattPerHour {
@@ -14,6 +14,8 @@ struct Charger: Chargeable {
         }
         return maximumWattPerHour
     }
+    
+    
 }
 
 let appleWatchCharger = Charger(maximumWattPerHour: 5)

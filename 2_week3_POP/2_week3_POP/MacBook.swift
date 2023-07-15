@@ -5,7 +5,9 @@
 //  Created by Dasan on 2023/07/15.
 //
 
-struct MacBook {
+import Foundation
+
+struct MacBook: Portable {
     let allowableChargeWattPerHour: WattPerHour
     let currentBattery: WattPerHour
     let maxBattery: WattPerHour = 100
@@ -13,8 +15,8 @@ struct MacBook {
     func chargeBattery(charger: Chargeable) {
         let chargeWattPerHour = charger.convert(chargeableWattPerHour: allowableChargeWattPerHour)
         
-        let fullChargeTime = (maxBattery - currentBattery) / chargeWattPerHour
+        let fullChargeTime = Double(maxBattery - currentBattery) / Double(chargeWattPerHour)
         
-        print("충전에 걸린 시간은 \(fullChargeTime)입니다.")
+        print(String(format: "충전에 걸린 시간은 %.1f 시간입니다.", fullChargeTime))
     }
 }

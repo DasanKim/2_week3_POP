@@ -5,7 +5,14 @@
 //  Created by Dasan on 2023/07/15.
 //
 
-import Foundation
+let macBook = MacBook(allowableChargeWattPerHour: 96, currentBattery: 40)
 
-print("Hello, World!")
+macBook.chargeBattery(charger: appleWatchCharger)
+macBook.chargeBattery(charger: iPadCharger)
+macBook.chargeBattery(charger: macBookCharger1)
 
+var gucciBag = Bag()
+
+gucciBag.put(item: macBookCharger1)
+gucciBag.put(item: macBook)
+gucciBag.showItems()
